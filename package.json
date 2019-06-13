@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "eslint-config-airbnb": "^17.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -14,21 +13,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src"
-  },
-  "eslintConfig": {
-    "extends": ["prettier", "airbnb"],
-    "rules": {
-      "react/prefer-stateless-function": 0,
-      "react/jsx-filename-extension": 0,
-      "react/jsx-one-expression-per-line": 0,
-      "no-use-before-define": 0,
-      "no-param-reassign": 0,
-      "react/prop-types": 0
-    },
-    "env": {
-      "browser": true,
-      "serviceworker": true
-    }
   },
   "browserslist": {
     "production": [
@@ -44,7 +28,14 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-plugin-mocha": "^5.3.0",
-    "eslint-plugin-react": "^7.13.0"
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "1.18.2"
   }
 }
