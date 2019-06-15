@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 import React from 'react';
 import { connect } from 'react-redux';
 import agent from '../agent';
@@ -15,7 +14,7 @@ const ListPagination = props => {
   }
 
   const range = [];
-  for (let i = 0; i < Math.ceil(props.articlesCount / 10); i += 1) {
+  for (let i = 0; i < Math.ceil(props.articlesCount / 10); ++i) {
     range.push(i);
   }
 

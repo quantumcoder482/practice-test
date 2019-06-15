@@ -1,3 +1,4 @@
+/* eslint-disable react/no-access-state-in-setstate */
 import React from 'react';
 import { connect } from 'react-redux';
 import ListErrors from './ListErrors';
@@ -52,7 +53,7 @@ class SettingsForm extends React.Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.currentUser) {
       this.setState(
-        Object.assign({}, this.prevState, {
+        Object.assign({}, this.state, {
           image: nextProps.currentUser.image || '',
           username: nextProps.currentUser.username,
           bio: nextProps.currentUser.bio,
